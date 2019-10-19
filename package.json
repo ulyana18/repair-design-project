@@ -1,0 +1,35 @@
+{
+  "name": "repair-design-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "watch": "webpack --mode development --watch",
+    "start": "webpack-dev-server --mode development --open"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "css-loader": "^3.2.0",
+    "file-loader": "^4.2.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ulyana18/repair-design-project.git"
+  },
+  "author": "Ulyana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ulyana18/repair-design-project/issues"
+  },
+  "homepage": "https://github.com/ulyana18/repair-design-project#readme"
+}
