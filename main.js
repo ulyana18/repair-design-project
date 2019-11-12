@@ -1,16 +1,22 @@
-let slideIndex = 1;
-showSlides(slideIndex);
+import './style.scss';
 
-function plusSlide() {
+let slideIndex = 1;
+let prevButton = document.querySelector('.gallery__prev-btn');
+let nextButton = document.querySelector('.gallery__next-btn');
+let cities = document.querySelectorAll('.completed-projects__gallery_li');
+
+nextButton.onclick = function() {
     showSlides(slideIndex += 1);
 }
 
-function minusSlide() {
+prevButton.onclick = function() {
     showSlides(slideIndex -= 1);  
 }
 
-function currentSlide(n) {
-    showSlides(slideIndex = n);
+for(let i = 0; i < cities.length; i++) {
+    cities[i].onclick = function() {
+        showSlides(slideIndex = i + 1);
+    }
 }
 
 function showSlides(n) {
@@ -37,11 +43,17 @@ function showSlides(n) {
 /////////////////////////////////////
 
 let form = document.querySelector('.main__form');
-let body = document.querySelector('.container');
+let headerForm = document.querySelector('.header__content_form');
+let footerForm = document.querySelector('.footer__content_form');
+let cross = document.querySelector('.form__cross');
 
-function hide_form() {
+cross.onclick = function() {
     form.style.display = 'none';
 }
-function show_form() {
+
+headerForm.onclick = function() {
+    form.style.display = 'block';
+}
+footerForm.onclick = function() {
     form.style.display = 'block';
 }
